@@ -3,9 +3,9 @@ import dotenv from "dotenv";
 
 dotenv.config();
 
-const dbHost = process.env.DB_HOST;
-const dbName = process.env.DB_NAME;
 
+const dbHost = process.env.DB_HOST 
+const dbName = process.env.DB_NAME
 const localDbUrl = `mongodb://${dbHost}/${dbName}`;
 
 export const connectDb = async () => {
