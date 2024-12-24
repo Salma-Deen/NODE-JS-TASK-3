@@ -1,0 +1,15 @@
+router.get('/no-mentors', async function(req, res, next) {
+   const students = await studentModel.find({mentor:[]})
+  try{
+    res.status(200).send({
+      students,
+      message:"Users Data Fetch Successfully"
+    })
+
+  }catch{
+    res.status(500).send({
+      message:"Internal Server Error",
+      error 
+    })
+  }
+});
