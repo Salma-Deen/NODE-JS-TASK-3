@@ -7,7 +7,7 @@ const server = express();
 server.use(express.json());
  server.use("/mentor",mentorRouter);
  server.use("/student",studentRouter);
-const PORT = 7000;
+const PORT = 4500;
 
 await connectDb();
 server.listen(PORT, () => {
